@@ -302,7 +302,8 @@ footer div i{
 
     .titleinfo{
         margin-bottom: 40px;
-            font-size: 40px;
+            font-size: 30px;
+            margin-top: 20px;
     }
     header>nav>ul{
         visibility: hidden;
@@ -330,17 +331,20 @@ footer div i{
         margin-top: 30px;
         width: 100%;
     }
-    table{
-        margin-left: 5%;
-        width: 50%;
-    }
+    td,th{
+        border: 2px solid rgb(63, 48, 20);
+        padding: 0;
+        text-align: center;
+   }
         .highlightsinfo{
             margin-bottom: 40px;
             margin-left: 15%;
         }
 
     .titleinfo{
+        padding-top: 20px;
         margin-bottom: 40px;
+            font-size: 50px;
     }
     header>nav>ul{
         visibility: hidden;
