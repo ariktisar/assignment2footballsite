@@ -324,9 +324,6 @@ footer div i{
  --------------------------------*/
 @media only screen and (min-width:688px) and (max-width:992px){
     
-    .youtubesection{
-        margin-left: 15%;
-    }
     #thumbnail{
         margin-top: 30px;
         width: 100%;
@@ -338,7 +335,6 @@ footer div i{
    }
         .highlightsinfo{
             margin-bottom: 40px;
-            margin-left: 15%;
         }
 
     .titleinfo{
@@ -357,5 +353,6 @@ footer div i{
         display: flex;
         flex-direction: column;
     }
+
 
 }
