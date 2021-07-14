@@ -1,3 +1,7 @@
+/*-----------------
+ Header section 
+ -----------------*/
+ 
 nav>ul{
     display: flex;
 }
@@ -24,6 +28,7 @@ nav>ul>li:hover .dropdown{
 .dropdown{
     margin-top: 5px;
     display: none;
+    position: absolute;
 }
 .dropdown li{
     padding: 10px 40px;
@@ -55,7 +60,11 @@ header{
     display: flex;
     flex-direction: column;
     background-color: rgb(36, 28, 151);
+    width: 100%;
 }
+/* -------------------------
+Header hover Transformation 
+------------------------------*/
 header:hover .titlebanner img{
     transform: rotate(30deg);
 }
@@ -63,6 +72,9 @@ header:hover .buttonwatch{
     transform: rotate(5deg);
     transform: translate(80px);
 }
+/*-----------------
+ Title Section 
+ -----------------*/
 .titlesection{
     padding-bottom: 7%;
     padding-left: 7%;
@@ -100,59 +112,13 @@ header:hover .buttonwatch{
     background: #E02C6D;
 
 }
-
-.highlightssection{
-    padding-bottom: 7%;
-    padding-left: 7%;
-    padding-right: 7%;
-    margin-top: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.highlightsinfo{
-    width: 40%;
-}
-.highlightsinfo p{
-    width: 80%;
-}
-.highlightsinfo h1{
-    font-size: 48px;
-
-}
-.highlightsbanner img{
-    width: 567px;
-    height: 427px;
-}
-
- nav{
-    padding-top:25px;
-    width: 100%;
-}
-/* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-/* common style or uti*/
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+/*-----------------
+ Players Section 
+ -----------------*/
 .playerinfo p{
     padding:0 15px;
 }
 
-/* section title */
-
-/* top players */
 .players{
     padding: 70px 0;
     display: grid;
@@ -179,16 +145,56 @@ main{
     font-size: 18px;
 }
 
-.fa-star{
-    font-size: 12px;
+/*-----------------
+ Highlight section 
+ -----------------*/
+.highlightssection{
+    padding-bottom: 7%;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-.fa-star.filled{
-    color: #ffc014;
+.highlightsinfo{
+    width: 40%;
 }
-.fa-star.empty{
-    color: #aeaeae;
+.highlightsinfo p{
+    width: 80%;
+}
+.highlightsinfo h1{
+    font-size: 48px;
+
+}
+.highlightsbanner img{
+    width: 567px;
+    height: 427px;
 }
 
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/* -------------------
+common style or uti
+-----------------------*/
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*-------------------------------
+ Optional-1 Scorefixtures Section 
+ --------------------------------*/
 table{
     background-color: rgb(120, 202, 202);
     box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.445);
@@ -216,19 +222,23 @@ th:hover{
     align-items: center;
 
 }
-.scorefixturesection th,td,tr{
-    margin: 0 20%;
-}
+
+/*-------------------------------
+ Optional-2 Youtube Section 
+ --------------------------------*/
 .youtubesection{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
 }
 #thumbnail{
     margin-top: 30px;
+
 }
+/* -------------------------
+Footer Section 
+------------------------------*/
 footer{
     font-size: 18px;
     display: flex;
@@ -249,15 +259,24 @@ footer div i{
     margin: 0 10px;
 }
 
-/* media */
+/*-------------------------------
+ Media Mobile section 
+ --------------------------------*/
 @media only screen and (max-width:688px){
     
+    .youtubesection{
+    margin-left: 15%;
+}
+#thumbnail{
+    margin-top: 30px;
+    width: 80%;
+}
     .highlightsinfo{
         margin-bottom: 40px;
         margin-left: 15%;
     }
     table{
-        margin-left: 15%;
+        margin-left: 5%;
     }
     .titleinfo{
         margin-bottom: 40px;
@@ -265,9 +284,7 @@ footer div i{
     header>nav>ul{
         visibility: hidden;
     }
-    .container{
-        width: 100%;
-    }
+
     .players{
         grid-template-columns: repeat(1,1fr);
     }
@@ -275,21 +292,33 @@ footer div i{
         display: flex;
         flex-direction: column;
     }
+    footer{
+        margin-left: 20%;
+    }
 
 }
+/*-------------------------------
+ Media Tablet Section
+ --------------------------------*/
 @media only screen and (min-width:688px) and (max-width:992px){
     
-    .highlightsinfo{
-        margin-bottom: 40px;
+    .youtubesection{
+        margin-left: 15%;
     }
+    #thumbnail{
+        margin-top: 30px;
+        width: 100%;
+    }
+        .highlightsinfo{
+            margin-bottom: 40px;
+            margin-left: 15%;
+        }
+
     .titleinfo{
         margin-bottom: 40px;
     }
     header>nav>ul{
         visibility: hidden;
-    }
-    .container{
-        width: 100%;
     }
     .players{
         grid-template-columns: repeat(2,1fr);
