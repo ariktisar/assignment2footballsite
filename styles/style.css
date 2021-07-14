@@ -105,6 +105,7 @@ header:hover .buttonwatch{
     padding-bottom: 7%;
     padding-left: 7%;
     padding-right: 7%;
+    margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -134,11 +135,16 @@ header:hover .buttonwatch{
 body{
     font-family: 'Poppins', sans-serif;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 .playerinfo p{
     padding:0 15px;
@@ -183,6 +189,46 @@ main{
     color: #aeaeae;
 }
 
+table{
+    background-color: rgb(120, 202, 202);
+    box-shadow: 15px 15px 50px rgba(0, 0, 0, 0.445);
+    border-collapse: collapse;
+    margin-bottom: 70px;
+    margin-top: 20px;
+    width: 100%;
+}
+td,th{
+     border: 2px solid rgb(63, 48, 20);
+     padding: 2% 5%;
+     text-align: center;
+}
+td:hover{
+    background-color: rgb(49, 141, 141);
+}
+th:hover{
+    background-color: rgb(49, 141, 141);
+}
+.scorefixturesection{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.scorefixturesection th,td,tr{
+    margin: 0 20%;
+}
+.youtubesection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+#thumbnail{
+    margin-top: 30px;
+}
 footer{
     font-size: 18px;
     display: flex;
@@ -205,8 +251,13 @@ footer div i{
 
 /* media */
 @media only screen and (max-width:688px){
+    
     .highlightsinfo{
         margin-bottom: 40px;
+        margin-left: 15%;
+    }
+    table{
+        margin-left: 15%;
     }
     .titleinfo{
         margin-bottom: 40px;
@@ -227,6 +278,7 @@ footer div i{
 
 }
 @media only screen and (min-width:688px) and (max-width:992px){
+    
     .highlightsinfo{
         margin-bottom: 40px;
     }
@@ -241,13 +293,11 @@ footer div i{
     }
     .players{
         grid-template-columns: repeat(2,1fr);
+        
     }
     .player, .titlesection, .highlightssection{
         display: flex;
         flex-direction: column;
-    }
-    .blog{
-        display: flex;
     }
 
 }
