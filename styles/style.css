@@ -151,7 +151,7 @@ header:hover .buttonwatch{
 .highlightssection{
     padding-bottom: 7%;
     padding-left: 7%;
-    padding-right: 7%;
+    padding-right: 0;
     margin-top: 30px;
     display: flex;
     align-items: center;
@@ -263,7 +263,25 @@ footer div i{
  Media Mobile section 
  --------------------------------*/
 @media only screen and (max-width:688px){
+    .titlebanner img{
+    transition: transform 0.7s;
+    margin-top: 34px;
+    width: 300px;
+    height: 280px;
+}
+    .highlightsinfo h1{
+        font-size: 30px;
     
+    }
+    .highlightsbanner img{
+        width: 300px;
+        height: 225px;
+    }
+    footer img{
+        padding-bottom: 40px;
+        width: 200px;
+        height: 50px;
+    }
     .youtubesection{
     margin-left: 15%;
 }
@@ -273,13 +291,18 @@ footer div i{
 }
     .highlightsinfo{
         margin-bottom: 40px;
-        margin-left: 15%;
+        margin-left: 0;
+        padding-left: 0;
     }
-    table{
-        margin-left: 5%;
-    }
+    td,th{
+        border: 2px solid rgb(63, 48, 20);
+        padding: 0;
+        text-align: center;
+   }
+
     .titleinfo{
         margin-bottom: 40px;
+            font-size: 40px;
     }
     header>nav>ul{
         visibility: hidden;
@@ -292,9 +315,7 @@ footer div i{
         display: flex;
         flex-direction: column;
     }
-    footer{
-        margin-left: 20%;
-    }
+    
 
 }
 /*-------------------------------
@@ -308,6 +329,10 @@ footer div i{
     #thumbnail{
         margin-top: 30px;
         width: 100%;
+    }
+    table{
+        margin-left: 5%;
+        width: 50%;
     }
         .highlightsinfo{
             margin-bottom: 40px;
